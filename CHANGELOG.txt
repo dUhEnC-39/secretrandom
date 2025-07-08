@@ -1,0 +1,25 @@
+Changelog for the secretrandom package:
+---------------------------------------------------------
+secretrandom v2.2.1 (July 7, 2025):
+  Quadruple-checked the following bugs that were in v2.2:
+    Corrected the directory of main.py and __init__.py that didn't load.
+    Removed the repetition of random.shuffle() in choice().
+    
+secretrandom v2.2 (July 7, 2025):
+  Changed randpwd() to randchar() for clarity that it can be used for character generation.
+  Moved changelog.txt and source code to this Github repo.
+  Updated README.md
+
+secretrandom v2.1 (July 2, 2025):
+  Modified the project description (README.md) for clarity.
+  Fixed some spelling errors in README.md
+  Added ver() for version details when printed (Not in docs).
+ 
+secretrandom v2.0.0 (June 30, 2025):
+  Finally debugged the bugs including the bugs from v1.0.0rc1
+ 
+secretrandom v1.1rc1 (June 29, 2025):
+  Endeavored to debug minor bugs issued with list bugging with random.shuffle(). Later realized that the bug was still in the script.
+ 
+June 20, 2025:
+  First release of secretrandom as secretrandom v1.0.0rc1.
