@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/practical_for-cryptography_number_generation_and_unpredictability-blue) ![](https://img.shields.io/badge/secretrandom-v2.2-orange) ![](https://img.shields.io/badge/on-PyPI)
+![](https://img.shields.io/badge/practical_for-cryptography_number_generation_and_unpredictability-blue) ![](https://img.shields.io/badge/secretrandom-v2.2-orange) ![](https://img.shields.io/badge/on-PyPI-blue)
 
 # secretrandom
 
