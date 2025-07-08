@@ -13,7 +13,18 @@
 - - -
 #### PyPI project: https://pypi.org/project/secretrandom/
 #### Changelog can be found [here](https://github.com/dUhEnC-39/secretrandom/blob/main/v2.2/changelog.txt)
-‎ 
+
+## Installation
+Open your system's terminal (ex: CMD, Powershell, etc.)
+```
+pip install secretrandom
+```
+Or in the Python terminal
+```
+>>> import pip
+>>> pip.main(['install', 'secretrandom'])
+```
+- - -
 ## Documentation guide
 
 All functions:
