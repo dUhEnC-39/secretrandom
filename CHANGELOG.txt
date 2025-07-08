@@ -1,7 +1,7 @@
 Changelog for the secretrandom package:
 ---------------------------------------------------------
 secretrandom v2.2.1 (July 7, 2025):
-  Quadruple-checked the following bugs that were in v2.2:
+  Rereleased v2.2 without the following bugs that were encountered:
     Corrected the directory of main.py and __init__.py that didn't load.
     Removed the repetition of random.shuffle() in choice().
     
