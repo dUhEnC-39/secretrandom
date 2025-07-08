@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/practical_for-cryptography_number_generation_and_unpredictability-blue) ![](https://img.shields.io/badge/secretrandom-v2.2-orange) ![](https://img.shields.io/badge/on-PyPI-blue)
 
-# secretrandom
+# secretrandom (Python package)
 
 ## The combination of the **random** module's features with the security of the **secrets** module for unpredictable random number generation and random character generation.
 
