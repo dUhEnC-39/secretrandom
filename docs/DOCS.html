@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        font-family: Roboto, sans-serif
+      }
+      #info_section {
+        margin-left: 31%;
+      }
+      #sidebar {
+        width: 30%;
+        font-family: Consolas, "Courier New", monospace;
+        color: #444444;
+      }
+      #sidebar-div {
+        background-color: #f0ecec;
+        padding-top: 5%;
+        padding-left: 3%;
+        border-radius: 10px;
+      }
+      .span-h2 {
+        font-size: 150%;
+      }
+      .span-h1 {
+        font-size: 200%;
+      }
+      .console_hyperlink {
+        color: #444444;
+      }
+      code, .pre-code {
+        background-color: #f5f5f5;
+        border: 1px solid #dcdcdc;
+        padding: 2px 4px;
+        border-radius: 4px;
+        font-family: Consolas, "Courier New", monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div style="display: flex; align-items: center; gap: 10px; margin-left: 10px;">
+        <span class="span-h2">secretrandom</span>
+        <img src="https://img.shields.io/badge/Latest%20Release-v2.3-orange">
+        <a href="https://github.com/dUhEnC-39/secretrandom" style="display: flex; align-items: center;">
+          <img src="https://img.icons8.com/?size=100&id=106567&format=png&color=000000" width="30">
+          <img src="https://img.icons8.com/?size=100&id=o90MnZhnB2CM&format=png&color=000000" width="20">
+        </a>
+        <a href="https://pypi.org/project/secretrandom/" style="display: flex; align-items: center;">
+          <img src="https://docs.pypi.org/assets/logo.png" width="30">
+          <img src="https://img.icons8.com/?size=100&id=o90MnZhnB2CM&format=png&color=000000" width="20">
+        </a>
+      </div>
+    </header>
+    <hr>
+    <section id="sidebar">
+      <div id="sidebar-div">
+        <nav>
+          <a href="#overview" class="console_hyperlink">1. What is secretrandom</a><br>
+          <a href="#installation" class="console_hyperlink">2. Installation</a>
+        </nav>
+      </div>
+    </section>
+    <section id="info_section">
+      <span class="span-h1">secretrandom Documentation</span>
+      <p>This official user guide of secretrandom explains what is, installation process, and all the features and their functionality.</p>
+      <b>Chapters:</b>
+      <div id="chapters" style="margin-left: 10px;">
+        <a href="#overview"><h3>1. What is secretrandom</h3></a>
+        <a href="#installation"><h3>2. Installation</h3></a>
+        <a><h3>3. All features and functions</h3></a>
+      </div>
+      <hr>
+      <div id="overview">
+        <span class="span-h2">1. What is secretrandom</span><br>
+        <p>As you might have known from the package's description, secretrandom is unpredictable random number generation, credential, and token generation. Hence the name "secretrandom", the combination of the <a href="https://docs.python.org/3/library/random.html">random</a> module and the <a href="https://docs.python.org/3/library/secrets.html">secrets</a> module with its function to generate random numbers, and cryptographic tokens respectively.</p>
+        <p>secrets utilizes random's SystemRandom() class which is random but great in unpredictability considering the <q><i>high-quality sources from the operating system.</i></q> according to Python's secrets documentation.</p>
+        <p>In secretrandom, the package features SystemRandom(), but not its unpredictability. secretrandom uses repetition utilizing for loops with random ranges (a random number of times the for loops has to repeat), resulting in different values SystemRandom() returns. If you were able to predict a random number returned by SystemRandom() verses secretrandom's number, secretrandom wins in unpredictability.</p>
+        <p>It ain't just random numbers that secretrandom is, from character generation to token generation to random shuffles. Believe it or not, secretrandom will be lifechanging for programmers, simple, super-rapid, and lightweight.</p>
+      </div>
+      <hr>
+      <div id="installation">
+        <span class="span-h2">2. Installation</span><br>
+        <p>Open your <b>operating system's CLI terminal</b> (CMD, Powershell, etc.) and input:</p>
+        <code>python -m pip install secretrandom</code>
+        <p>After secretrandom is installed sucessfully be sure the right version is installed by printing secretrandom.ver() in your <strong>Python terminal</strong> (with secretrandom imported)</p>
+        <div class="pre-code">
+          >>> import secretrandom as sr<br>
+          >>> print(sr.ver())<br>
+          secretrandom v2.3 Stable<br>
+          Official Stable Release by dUhEnC-39.<br>
+          Released on July 11, 2025.
+        </div>
+        <h3>If your secretrandom's version is not v2.3, update secretrandom in your operating system's CLI terminal by inputting:</h3>
+        <code>python -m pip install secretrandom -U</code>
+      </div>
+      <hr>
+    </section>
+  </body>
+</html>
