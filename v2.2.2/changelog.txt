@@ -1,0 +1,3 @@
+secretrandom v2.2.2 (July 8, 2025):
+  Quadruple-DEBUGGED ALL BUGS (Guaranteed 0% bugs) which included:
+    Forgot to import randchar() after changing the function name.
