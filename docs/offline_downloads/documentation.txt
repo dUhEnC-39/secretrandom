@@ -1,0 +1,136 @@
+secretrandom     Latest Release v2.3
+
+
+
+
+       secretrandom Documentation Offline
+       This official user guide of secretrandom explains what is, installation process, and all the features and their functionality.
+
+       Chapters:
+
+        1. What is secretrandom
+
+        2. Installation
+
+        3. Features and functions
+
+       1. What is secretrandom
+       As you might have known from the package's description, secretrandom is unpredictable random number generation,
+       credential, and token generation. Hence the name "secretrandom", the combination of the random module and the secrets
+       module with its function to generate random numbers, and cryptographic tokens respectively.
+
+       secrets utilizes random's SystemRandom() class which is random but great in unpredictability considering the "high-quality
+       sources from the operating system." according to Python's secrets documentation.
+
+       In secretrandom, the package features SystemRandom(), but not its unpredictability. secretrandom uses repetition utilizing
+       for loops with random ranges (a random number of times the for loops has to repeat), resulting in different values
+       SystemRandom() returns. If you were able to predict a random number returned by SystemRandom() verses
+       secretrandom's number, secretrandom wins in unpredictability.
+
+       It ain't just random numbers that secretrandom is, from character generation to token generation to random shuffles. Believe
+       it or not, secretrandom will be lifechanging for programmers, simple, super-rapid, and lightweight.
+
+
+       2. Installation
+       Open your operating system's CLI terminal (CMD, Powershell, etc.) and input:
+
+       python -m pip install secretrandom
+
+       After secretrandom is installed sucessfully, be sure the right version is installed by printing secretrandom.ver() in your
+       Python terminal (with secretrandom imported)
+
+       >>> import secretrandom as sr
+       >>> print(sr.ver())
+       secretrandom v2.3 Stable
+       Official Stable Release by dUhEnC-39.
+       Released on July 11, 2025.
+
+       If your secretrandom is not v2.3, input the following command down below to update secretrandom.
+
+       python -m pip install secretrandom -U
+
+       3. Features and Functions
+             randchar() — Password/Character generation
+
+             randcode() — Passcode and PIN generation
+
+             product_id() — Product ID/Product Key gen
+
+             token_bytes() — Token bytes gen
+
+             token_hex() — Token hex gen
+
+             randint() — Random whole integer gen
+
+             randflt() — Random float gen
+
+             choice() — For random choices
+
+             shuffle() — For random shuffles
+            randchar()
+
+            Generates a random character based on int: length (1st argument)
+
+            import secretrandom
+            password = secretrandom.randchar(1)
+            print(password) # Prints out a random character
+
+            Print multiple characters to makeup a password.
+
+            password = secretrandom.randchar(17)
+            print(password) # Prints out multiple characters like a password
+
+            randcode()
+
+            Generates passcodes or PINs based on the length as
+
+            passcode = secretrandom.randcode(6)
+            print(passcode) # Prints out passcode with 6 integers
+
+            product_id()
+
+            Generates product IDs or product keys based on the length as the only argument.
+
+            product_key = secretrandom.product_id(5)
+            print(product_key) # Prints out product ID with 5 segments ('2ZKDF-6RYHM-QUKVG-JJYRZ-GQ2D5')
+
+            randint()
+
+            Random whole integer generator starting from 1st arg to 2nd arg with steps (3rd arg)
+
+            random_num = secretrandom.randint(1, 4)
+            print(random_num) # Prints out a number between 1-4
+
+            OR
+
+            random_num = secretrandom.randint(1, 6, 2)
+            print(random_num) # Prints out a number either 2, 4, or 6
+
+            randflt()
+
+            Random float generator from 1st arg to 2nd arg
+
+            random_flt = secretrandom.randflt(1, 2)
+            print(random_flt) # Prints out random float from 1 to 2 (like 1.673)
+
+            choice()
+
+            Chooses part of a list of values.
+
+            choice = secretrandom.choice('abcd')
+            print(choice) # Prints out what it chose (either a, b, c, or d)
+
+            shuffle()
+
+            Shuffles a list of values.
+
+            data = ['a', 'b', 'c', 'd']
+            secretrandom.shuffle(data)
+            print(data) # Shuffles the list of values.
+
+                  Latest Release v2.3
+secretrandom
+Go to top
+
+                                                                                         Last updated on Jul 23, 2025 at 02:00pm (Pacific Time)
+
