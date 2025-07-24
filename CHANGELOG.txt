@@ -18,7 +18,7 @@ secretrandom v2.2 (July 7, 2025):
   Moved changelog.txt and source code to this Github repo.
   Updated README.md
 
-secretrandom v2.1 (July 2, 2025):
+secretrandom v2.1 Stable (July 2, 2025):
   Modified the project description (README.md) for clarity.
   Fixed some spelling errors in README.md
   Added ver() for version details when printed (Not in docs).
